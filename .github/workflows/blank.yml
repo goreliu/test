@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
-      run: zsh -c 'echo Hello, world!'
+      run: /bin/zsh -c 'echo Hello, world!'
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
