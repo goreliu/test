@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
-      run: sudo apt-get update; sudo apt-get install zsh
+      run: pwd
+      # run: sudo apt-get update; sudo apt-get install zsh
     - name: Run a multi-line script
       run: |
-        zsh -c 'echo Add other actions to build,'
-        echo test, and deploy your project.
+          find
