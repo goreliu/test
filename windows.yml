@@ -9,15 +9,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      - name: Run a one-line script
+      - name: test
       shell: cmd
       run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
-    - name: Run a multi-line script
+    - name: test2
       shell: cmd
       run: |
           set path=%path%;"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
           echo %path%
-    - name: Archive production artifacts
+    - name: upload
       uses: actions/upload-artifact@v1
       with:
         name: download filename
