@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wget https://github.com/ClementTsang/bottom/releases/download/0.4.3/bottom_required_files.tar.gz
+tar -xvf bottom_required_files.tar.gz
