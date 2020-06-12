@@ -1,16 +1,12 @@
-name: CI
+name: linux
 
 on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: test1
-      run: sudo apt-get update; sudo apt-get install zsh
-    - name: test2
-      run: |
+    - run: sudo apt-get update; sudo apt-get install zsh
+    - run: |
         echo good

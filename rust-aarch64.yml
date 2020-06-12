@@ -14,8 +14,8 @@ jobs:
           toolchain: stable
           target: aarch64-unknown-linux-gnu
           override: true
-#      - uses: actions-rs/cargo@v1
-#        with:
-#          use-cross: true
-#          command: build
-#          args: --target aarch64-unknown-linux-gnu --release --locked
+      - uses: actions-rs/cargo@v1
+        with:
+          use-cross: true
+          command: build
+          args: --target aarch64-unknown-linux-gnu --release --locked

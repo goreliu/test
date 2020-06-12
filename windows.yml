@@ -1,24 +1,19 @@
-name: CI
+name: windows
 
 on: [push]
 
 jobs:
   build:
-
     runs-on: windows-latest
-
     steps:
-    - uses: actions/checkout@v2
-      - name: test
-      shell: cmd
-      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
-    - name: test2
-      shell: cmd
-      run: |
-          set path=%path%;"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
-          echo %path%
-    - name: upload
-      uses: actions/upload-artifact@v1
-      with:
-        name: download filename
-        path: file or dir
+      - uses: actions/checkout@v2
+      - shell: cmd
+        run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
+      - shell: cmd
+        run: |
+            set path=%path%;"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
+            echo %path%
+      - uses: actions/upload-artifact@v1
+        with:
+          name: download filename
+          path: file or dir
