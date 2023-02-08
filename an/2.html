@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/4.6.2/css/bootstrap.min.css">
+
+    <title>小问题</title>
+  </head>
+  <body>
+    <h2>李子轩是大聪明？</h2>
+    <button type="button" class="btn btn-primary" id="b1">是的</button>
+    <button type="button" class="btn btn-secondary" id="b2">不是</button>
+
+    <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $("#b1").click(function() {
+        alert("恭喜你答对了！");
+      })
+      $("#b2").click(function() {
+        alert("很遗憾，答错了呢，可以再想一下");
+      })
+    </script>
+  </body>
+</html>
